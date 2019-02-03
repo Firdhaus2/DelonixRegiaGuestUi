@@ -1,0 +1,15 @@
+.loginBox {
+    width: 80%;
+}
+.loginBox button {
+    width: 100%;
+    margin-bottom: 5px;
+    background-color: rgb(160,46,46);
+}
+
+.extraBtn {
+    width: 50%;
+    background-color: rgb(160,46,46);
+    border-radius: 0px;
+    color: white;
+}
