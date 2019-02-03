@@ -2,7 +2,6 @@
   <div style="border: 5px solid rgb(160,46,46); padding-bottom: 30px;">
     <div class="loginBox">
       <legend style="margin: 30px 0px;">Welcome to Delonix Regia!<br><span>Login to proceed</span></legend>
-
       <form>
         <div style="margin: 0px 0px 60px;">
           <div class="form-group">
@@ -18,6 +17,89 @@
       </form>
     </div>
   </div>
-  <button type="submit" class="btn extraBtn">Find Username</button>
-  <button type="submit" class="btn extraBtn">Forgot Password</button>
+  <button type="submit" class="btn extraBtn" data-toggle="modal" data-target="#findUsername">Find Username</button>
+  <button type="submit" class="btn extraBtn" data-toggle="modal" data-target="#forgotPass">Forgot Password</button>
+</div>
+
+<div class="modal fade" id="findUsername" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"><strong>Find Username</strong></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" align=center>
+        <input type="email" style="width: 90%; height: 50px; padding-left: 15px; font-size: 20px; " placeholder="Email">
+        <p style="margin-top: 13px;"><small>*Your username will be sent to your email if<br>the email is associated to
+            an account.</small></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal" aria-label="Close">Enter</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="forgotPass" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"><strong>Forgot Password</strong></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" align=center>
+        <input type="email" style="width: 90%; height: 50px; padding-left: 15px; font-size: 20px; " placeholder="Email">
+        <p style="margin-top: 13px;"><small>An email with a 6-digit pin will be sent to you.</small></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal" data-toggle="modal" data-target="#verification">Enter</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="verification" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"><strong>Verification</strong></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" align=center>
+        <input type="text" style="width: 90%; height: 50px; padding-left: 15px; font-size: 20px;" placeholder="6 Digit Pin">
+        <p style="margin-top: 13px;"><small>An email with a 6-digit pin should have been sent to you.<br>If you have
+            not received the email, click sent again.</small></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger">Sent Again</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal" data-toggle="modal" data-target="#changePassword">Enter</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="changePassword" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"><strong>Change Password</strong></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" align=center>
+        <input type="text" style="width: 90%; height: 50px; padding-left: 15px; font-size: 20px;" placeholder="New Password">
+        <input type="text" style="width: 90%; height: 50px; padding-left: 15px; font-size: 20px;" placeholder="Re-enter Password">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal" aria-label="Close">Confirm</button>
+      </div>
+    </div>
+  </div>
 </div>
