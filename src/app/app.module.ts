@@ -13,6 +13,10 @@ import { RideComponent } from './ride/ride.component';
 import { SupplyRestockComponent } from './supply-restock/supply-restock.component';
 import { OrderFoodComponent } from './order-food/order-food.component';
 import { AccountComponent } from './account/account.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
+
+import { routing } from './app.routing';
 
 @NgModule({
   declarations: [
@@ -27,10 +31,13 @@ import { AccountComponent } from './account/account.component';
     RideComponent,
     SupplyRestockComponent,
     OrderFoodComponent,
-    AccountComponent
+    AccountComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    routing
   ],
   providers: [],
   bootstrap: [AppComponent]
