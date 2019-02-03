@@ -1,0 +1,50 @@
+img {
+    border-radius: 15px;
+    width: 250px;
+    position: absolute;
+    top: 45px;
+    left: 15px;
+}
+
+.facility1{
+    border: solid;
+    border-width: 1px;
+    width: 750px;
+    height: 250px;
+    background-color: #E4E4E4;
+    position: absolute;
+    top: 350px;
+    left: 380px;
+}
+
+.facility2{
+    border: solid;
+    border-width: 1px;
+    width: 750px;
+    height: 250px;
+    background-color: #E4E4E4;
+    position: absolute;
+    top: 620px;
+    left: 380px;
+    margin-bottom: 50px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.description {
+    position: absolute;
+    top: 10px;
+    left: 340px;
+    text-align: center;
+}
+
+.description2 {
+    position: absolute;
+    top: 10px;
+    left: 390px;
+    text-align: center;
+}
