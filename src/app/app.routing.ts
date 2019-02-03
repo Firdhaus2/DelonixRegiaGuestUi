@@ -14,6 +14,7 @@ import { OrderFoodComponent } from './order-food/order-food.component';
 import { AccountComponent } from './account/account.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { OtherServiceComponent } from './other-service/other-service.component';
 
 const appRoutes: Routes = [
     { path: 'home', component: HomeComponent },
@@ -29,6 +30,7 @@ const appRoutes: Routes = [
     { path: 'account', component: AccountComponent },
     { path: 'login', component: LoginComponent },
     { path: 'register', component: RegisterComponent },
+    { path: 'otherServices', component: OtherServiceComponent },
     { path: '', component: HomeComponent, pathMatch: 'full' }
 ];
 export const routing: ModuleWithProviders =

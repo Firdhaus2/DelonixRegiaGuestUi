@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { routing } from './app.routing'
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -15,8 +16,8 @@ import { OrderFoodComponent } from './order-food/order-food.component';
 import { AccountComponent } from './account/account.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
-
-import { routing } from './app.routing';
+import { OtherServiceComponent } from './other-service/other-service.component';
+import { from } from 'rxjs';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { routing } from './app.routing';
     OrderFoodComponent,
     AccountComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    OtherServiceComponent
   ],
   imports: [
     BrowserModule,
