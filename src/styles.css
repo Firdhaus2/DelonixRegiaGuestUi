@@ -3,5 +3,6 @@ body {
     font-family: "Lato", sans-serif;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url("https://cdn.discordapp.com/attachments/540827604706525184/541497185515339777/Red-Flowers-and-Green-Grass-Combined-Some-Grass-Mere-a-More-Attractive-Scene-is-Gained-HD-Natural-Sc.jpg");
+    background-color: #F5F5DC;
+    /* background-image: url("https://cdn.discordapp.com/attachments/540827604706525184/541497185515339777/Red-Flowers-and-Green-Grass-Combined-Some-Grass-Mere-a-More-Attractive-Scene-is-Gained-HD-Natural-Sc.jpg"); */
 }

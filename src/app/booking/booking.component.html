@@ -1,3 +1,74 @@
-<p>
-  booking works!
-</p>
+<form>
+  <div class="guestaddress">
+    <h2 align= "center"><b>Guest Address</b></h2>
+    <div class="form-group col-md-11">
+      <label for="inputEmail4">Street Address</label>
+      <input type="email" class="form-control" id="inputEmail4">
+    </div>
+    <div class="form-group col-md-2">
+      <label for="inputAddress">Block No.</label>
+      <input type="text" class="form-control" id="inputAddress">
+    </div>
+    <div class="form-group col-md-3">
+      <label for="inputAddress2">Unit No.</label>
+      <input type="text" class="form-control" id="inputAddress2">
+    </div>
+    <div class="form-group col-md-3">
+      <label for="inputCity">Postal Code</label>
+      <input type="text" class="form-control" id="inputCity">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputState">Country</label>
+      <select id="inputState" class="form-control">
+        <option selected>Choose...</option>
+        <option>Singapore</option>
+        <option>Malaysia</option>
+        <option>Others</option>
+      </select>
+    </div>
+  </div>
+</form>
+<!--This is the guest information form-->
+<form>
+  <div class="guestinfo">
+    <h2 align="center"><b>Guest Info</b></h2>
+    <div class="form-row">
+      <div class="col-md-4 mb-3">
+        <label for="validationServer01">First name</label>
+        <input type="text" class="form-control" id="validationServer01" required>
+      </div>
+      <div class="col-md-4 mb-3">
+        <label for="validationServer02">Last name</label>
+        <input type="text" class="form-control" id="validationServer02" required>
+      </div>
+      <div class="form-group col-md-4">
+          <label for="inputState">Gender</label>
+          <select id="inputState" class="form-control">
+            <option selected>Choose...</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Prefer not to say</option>
+          </select>
+        </div>
+    </div>
+    <div class="form-row">
+      <div class="col-md-4 mb-3">
+        <label for="validationServerUsername">Mobile Number</label>
+        <div class="input-group">
+          <input type="text" class="form-control" id="validationServerUsername" aria-describedby="inputGroupPrepend3"
+            required>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <label for="validationServerUsername">Home Number</label>
+        <div class="input-group">
+          <input type="text" class="form-control" id="validationServerUsername" aria-describedby="inputGroupPrepend3"
+            required>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="btn" routerLink="/payment" routerLinkActive="active">
+    <h1><strong>To Checkout Summary</strong></h1>
+  </button>
+</form>

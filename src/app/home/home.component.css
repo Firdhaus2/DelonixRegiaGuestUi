@@ -8,6 +8,7 @@ img {
     position: absolute;
     left: 380px;
     top: 440px;
+    margin-bottom: 50px;
 }
 
 .checkin{
@@ -25,7 +26,7 @@ img {
 .checkoutForm{
     width:200px;
     position: absolute;
-    left: 200px;
+    left: 210px;
 }
 
 .checkInOut{
@@ -35,20 +36,26 @@ img {
     border-style: hidden;
     height: 80px;
     width: 1000px;
-    background-color: lightgrey;
+    background-color: #9a2e2e;
+    box-shadow: 2px 2px 10px grey;
 }
 
 .findbtn {
-    background-color: #A12E2E;
+    background-color: #343a40;
     height: 40px;
     width: 90px;
     position: absolute;
     top: 24px;
     left: 900px;
+    color: white;
 }
 
 .peopleForm{
     position: absolute;
     top: 19px;
     left: 480px;
+}
+
+label {
+    color: white;
 }
