@@ -1,0 +1,57 @@
+.area1{
+    width: 40%;
+    float: left;
+}
+.box1 {
+    width: 80%;
+    border: 1.5px solid black;
+    margin: 25px auto;
+    border-radius: 5px;
+}
+.box1 button{
+    width: 100%;
+}
+.box1 h5{
+    border-bottom: 1px solid black;
+    padding: 5px 8px;
+    font-weight: bold;
+    text-align: center;
+}
+.box1 p {
+    line-height: 13px;
+    font-weight: bold;
+}
+.box1 span {
+    line-height: 13px;
+    font-weight: normal;
+}
+
+.area2{
+    width: 60%;
+    float: right;
+}
+.box2 {
+    width: 80%;
+    border: 1.5px solid black;
+    margin: 25px auto;
+    border-radius: 5px;
+}
+.box2 h5{
+    border-bottom: 1px solid black;
+    padding: 5px 8px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.bookUnit {
+    width: 100%;
+    margin: 2px auto;
+    border-bottom: 1px solid black;
+}
+.bookUnit button {
+    width: 100%;
+}
+.bookUnit p {
+    margin-top: 5px; 
+    font-size: 18px;
+}
