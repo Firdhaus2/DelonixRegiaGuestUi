@@ -1,3 +1,54 @@
-<p>
-  ride works!
-</p>
+<div style="margin-top: 20px;" align=center>
+  <h1><strong>Ride Request</strong></h1>
+</div>
+
+<div class="box1">
+  <h4>You are here: </h4>
+  <div align=center>
+    <img algin=center style="width: 700px; border: 5px solid rgb(160,46,46); border-radius: 20px;" src="https://media.discordapp.net/attachments/540827604706525184/541831239489945612/Ms-Pacma.png?width=889&height=518">
+  </div>
+</div>
+
+<div class="box2">
+  <h4>Select Vechicle Type:</h4>
+  <div class="row justify-content-around">
+    <button class="btn btn-danger rideBtn" data-toggle="modal" data-target="#confirmation">Family Car 5-Seater</button>
+    <button class="btn btn-danger rideBtn" data-toggle="modal" data-target="#confirmation">Standard Taxi</button>
+    <button class="btn btn-danger rideBtn" data-toggle="modal" data-target="#confirmation">Limousine</button>
+  </div>
+</div>
+
+<div class="modal fade" id="confirmation" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"><strong>Confirmation</strong></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" align=center>
+        <p>You have chosen a vechicle.</p>
+        <p>Proceed to booking the ride?</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal" aria-label="Close">Cancel</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal" data-toggle="modal" data-target="#booked">Confirm</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="booked" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body" align=center>
+        <p>Ride Booking Successful!</p>
+        <p>Please be at taxi lobby in approx. 5 minutes.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal" aria-label="Close">Okay</button>
+      </div>
+    </div>
+  </div>
+</div>
