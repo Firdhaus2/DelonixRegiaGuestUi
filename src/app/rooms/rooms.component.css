@@ -1,0 +1,99 @@
+
+img {
+    width: 300px;
+    position: absolute;
+    top: 45px;
+    left: 15px;
+}
+    
+
+.carousel1{
+    width: 750px;
+    position: absolute;
+    left: 380px;
+    top: 440px;
+}
+
+.checkin{
+    position: absolute;
+    width:200px;
+    top: 24px;
+}
+
+.checkout{
+    position: absolute;
+    width:200px;
+    top: 24px;
+}
+
+.checkoutForm{
+    width:200px;
+    position: absolute;
+    left: 200px;
+}
+
+.checkInOut{
+    position: absolute;
+    left: 272px;
+    top: 300px;
+    border-style: hidden;
+    height: 80px;
+    width: 1000px;
+    background-color: lightgrey;
+}
+
+.findbtn {
+    background-color: #A12E2E;
+    height: 40px;
+    width: 90px;
+    position: absolute;
+    top: 24px;
+    left: 900px;
+    color: white;
+}
+
+.peopleForm{
+    position: absolute;
+    top: 19px;
+    left: 480px;
+}
+
+.room1{
+    border: solid;
+    border-width: 1px;
+    width: 750px;
+    height: 280px;
+    background-color: #E4E4E4;
+    position: absolute;
+    top: 420px;
+    left: 380px;
+}
+
+h3{
+    position: absolute;
+    left: 90px;
+}
+
+.bedsize {
+    position: absolute;
+    top: 220px;
+    left: 14px;
+}
+
+.smoking {
+    position: absolute;
+    top: 220px;
+    left: 169px;
+}
+
+.description {
+    text-align: center;
+    position: relative;
+    top: 30px;
+    left: 140px;   
+}
+
+.bookbtn {
+    background-color: #A12E2E;
+    color: white;
+}

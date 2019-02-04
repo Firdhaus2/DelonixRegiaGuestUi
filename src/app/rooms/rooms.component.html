@@ -1,3 +1,61 @@
-<p>
-  rooms works!
-</p>
+<form>
+  <div class="row checkInOut">
+    <div class="col checkinForm">
+      <label for="checkIn"><b>Check-In:</b></label>
+      <input type="date" class="form-control checkin">
+    </div>
+    <div class="col checkoutForm">
+      <label for="checkIn"><b>Check-Out:</b></label>
+      <input type="date" class="form-control checkout">
+    </div>
+    <form class="form-inline peopleForm">
+      <label for="rooms"><b>Rooms:&nbsp;</b></label>
+      <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+        <option selected>0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
+      <label for="adults"><b>Adults:&nbsp;</b></label>
+      <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+        <option selected>0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
+      <label for="childrens"><b>Childrens:&nbsp;</b></label>
+      <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+        <option selected>0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
+    </form>
+    <button class="btn findbtn" routerLink="/rooms" routerLinkActive="active">Update</button>
+  </div>
+</form>
+<div class="room1">
+  <img src="https://cdn.discordapp.com/attachments/540827604706525184/541575686595543040/Queen-Room.jpg">
+  <h3>Basic Room</h3>
+  <div class="bedsize">
+    <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+      <option value="king">King Size</option>
+      <option value="queen">Queen Size</option>
+    </select>
+  </div>
+  <div class="smoking">
+    <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+      <option selected>Non-Smoking</option>
+      <option value="king">Smoking</option>
+    </select>
+  </div>
+  <div class="description">
+    <p>Room service is available for this room!</p>
+    <p>Spacious room and perfect view to Marina Bay!</p>
+    <br>
+    <br>
+    <h2><b>SGD180 per night</b></h2>
+    <br>
+    <button class="btn bookbtn" routerLink="/booking" routerLinkActive="active">Book Now!</button>
+  </div>
+</div>
