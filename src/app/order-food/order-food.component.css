@@ -1,0 +1,38 @@
+img {
+    border-radius: 15px;
+    width: 250px;
+    border: solid;
+    border-width: 3px;
+    border-color: #9a2e2e;
+}
+
+h5{
+    position: relative;
+    left: 50px;
+}
+
+.food1 {
+    position: relative;
+    top: 20px;
+    left: 250px;
+}
+
+.food2 {
+    position: absolute;
+    top: 356px;
+    left: 550px;
+}
+.quantity {
+    position: relative;
+    left: 30px;
+}
+
+.addbtn1{
+    position: relative;
+    top: -2px;  
+    left: 8px;
+    width: 80px;
+    height: 35px;
+    color: white;
+    background-color: #9a2e2e;
+}
