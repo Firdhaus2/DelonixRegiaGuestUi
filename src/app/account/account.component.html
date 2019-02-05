@@ -10,11 +10,11 @@
 </div>
 
 <div class="area1">
-  <div class="box1">
+  <div class="box1" *ngFor="let accInfo of accInfos" accInfos>
     <h5>Account Info</h5>
     <div style="padding: 5px 8px 0px;">
-      <p>Email: <span>abc@gmail.com</span></p>
-      <p>Username: <span>xyz123</span></p>
+      <p>Email: <span>{{ accInfo.email }}</span></p>
+      <p>Username: <span>{{ accInfo.username }}</span></p>
       <p>Password: <span>********</span></p>
     </div>
     <button class="btn btn-danger">Edit Account Info</button>

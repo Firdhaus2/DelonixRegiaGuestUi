@@ -3,7 +3,7 @@
     <div class="loginBox">
       <legend style="margin: 30px 0px;">Welcome to Delonix Regia!<br><span>Register Now!</span></legend>
 
-      <form  [formGroup]="registerForm">
+      <form novalidate [formGroup]="registerForm" (ngSubmit)="registerAcc(registerForm)">
         <div style="margin: 0px 0px 40px;">
           <div class="form-group">
             <input type="text" class="form-control"  formControlName="usenameR" placeholder="Username">
@@ -20,7 +20,7 @@ Confirm Password">
 E-Mail Address">
           </div>
         </div>
-        <button type="submit" class="btn btn-primary" routerLink="/login" routerLinkActive="active">SIGNUP</button>
+        <button type="submit" class="btn btn-primary" [disabled]="!(registerForm.valid)">SIGNUP</button>
       </form>
     </div>
   </div>
