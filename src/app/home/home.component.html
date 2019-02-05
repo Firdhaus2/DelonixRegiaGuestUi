@@ -1,36 +1,42 @@
-<form>
+<form [formGroup]="bookingForm1">
     <div class="row checkInOut">
-        <div class="col checkinForm">
+        <div class="col checkinForm form-group">
             <label for="checkIn">Check-In:</label>
-            <input type="date" class="form-control checkin">
+            <input type="date" formControlName="date1" class="form-control checkin">
         </div>
-        <div class="col checkoutForm">
+        <div class="col checkoutForm form-group">
             <label for="checkIn">Check-Out:</label>
-            <input type="date" class="form-control checkout">
+            <input type="date" formControlName="date2" class="form-control checkout">
         </div>
-        <form class="form-inline peopleForm">
-            <label for = "rooms">Rooms:&nbsp;</label>
-            <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
-                <option selected>0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-            </select>
-            <label for = "adults">Adults:&nbsp;</label>
-            <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
-                <option selected>0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-            </select>
-            <label for = "chidrens">Childrens:&nbsp;</label>
-            <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
-                <option selected>0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-            </select>
-        </form>
+        <div class="form-inline peopleForm">
+            <div class="form-group">
+                <label for="rooms">Rooms:&nbsp;</label>
+                <select formControlName="roomNo" class="custom-select my-1 mr-sm-2 form-control" id="inlineFormCustomSelectPref">
+                    <option selected>0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="adults">Adults:&nbsp;</label>
+                <select formControlName="adultNo" class="custom-select my-1 mr-sm-2 form-control" id="inlineFormCustomSelectPref">
+                    <option selected>0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="chidrens">Childrens:&nbsp;</label>
+                <select formControlName="childNo" class="custom-select my-1 mr-sm-2 form-control" id="inlineFormCustomSelectPref">
+                    <option selected>0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </div>
+        </div>
         <button class="btn findbtn" routerLink="/rooms" routerLinkActive="active">Find</button>
     </div>
 </form>
