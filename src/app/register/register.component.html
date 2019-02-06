@@ -6,18 +6,32 @@
       <form novalidate [formGroup]="registerForm" (ngSubmit)="registerAcc(registerForm)">
         <div style="margin: 0px 0px 40px;">
           <div class="form-group">
-            <input type="text" class="form-control"  formControlName="usenameR" placeholder="Username">
+            <input type="text" class="form-control" formControlName="usenameR" placeholder="Username">
+            <p class="validationTag" *ngIf="registerForm.controls.usenameR.dirty && registerForm.controls.usenameR.hasError('required')">
+              * Username is required.
+            </p>
           </div>
-          <div class="form-group">
-            <input type="password" class="form-control"  formControlName="passwordR" placeholder="Password (Min. 8 Characters)">
+          <div class="form-group" formGroupName="pwdSet">
+            <input type="password" class="form-control" formControlName="passwordR" placeholder="Password">
+            <p class="validationTag" *ngIf="registerForm.controls.pwdSet.controls.passwordR.dirty && registerForm.controls.pwdSet.controls.passwordR.hasError('pattern')">
+              * Password must be at least 8 characters long, contain at least 1 number, uppercase character and
+              lowercase
+              character.
+            </p>
           </div>
-          <div class="form-group">
-            <input type="password" class="form-control"  formControlName="rePasswordR" placeholder="
+          <div class="form-group" formGroupName="pwdSet">
+            <input type="password" class="form-control" formControlName="rePasswordR" placeholder="
 Confirm Password">
+            <p class="validationTag" *ngIf="registerForm.controls.pwdSet.hasError('notmatch')">
+              * Passwords does not match!
+            </p>
           </div>
           <div class="form-group">
-            <input type="email" class="form-control"  formControlName="emailR" placeholder="
+            <input type="email" class="form-control" formControlName="emailR" placeholder="
 E-Mail Address">
+            <p class="validationTag" *ngIf="registerForm.controls.emailR.dirty && registerForm.controls.emailR.hasError('required') || registerForm.controls.emailR.hasError('email')">
+              * Valid email is required.
+            </p>
           </div>
         </div>
         <button type="submit" class="btn btn-primary" [disabled]="!(registerForm.valid)">SIGNUP</button>
