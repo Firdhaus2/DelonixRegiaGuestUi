@@ -3,23 +3,23 @@
     <h2 align= "center"><b>Guest Address</b></h2>
     <div class="form-group col-md-11">
       <label for="inputEmail4">Street Address</label>
-      <input type="email" class="form-control" id="inputEmail4">
+      <input type="text" formControlName="streetadd" class="form-control" id="streetadd">
     </div>
     <div class="form-group col-md-2">
       <label for="inputAddress">Block No.</label>
-      <input type="text" class="form-control" id="inputAddress">
+      <input type="text" formControlName="blockno" class="form-control" id="blockno">
     </div>
     <div class="form-group col-md-3">
       <label for="inputAddress2">Unit No.</label>
-      <input type="text" class="form-control" id="inputAddress2">
+      <input type="text" formControlName="unitno" class="form-control" id="unitno">
     </div>
     <div class="form-group col-md-3">
       <label for="inputCity">Postal Code</label>
-      <input type="text" class="form-control" id="inputCity">
+      <input type="text" formControlName="postalcode" class="form-control" id="postalcode">
     </div>
     <div class="form-group col-md-4">
-      <label for="inputState">Country</label>
-      <select id="inputState" class="form-control">
+      <label for="inputCountry">Country</label>
+      <select id="inputCountry" formControlName="country" class="form-control">
         <option selected>Choose...</option>
         <option>Singapore</option>
         <option>Malaysia</option>
@@ -29,21 +29,21 @@
   </div>
 </form>
 <!--This is the guest information form-->
-<form [formGroup]="guestInfoForm">
+<form [formGroup]="personalInfoForm">
   <div class="guestinfo">
     <h2 align=center><b>Guest Info</b></h2>
     <div class="form-row">
       <div class="col-md-4 mb-3">
         <label for="validationServer01">First name</label>
-        <input type="text" class="form-control" id="validationServer01" required>
+        <input type="text" class="form-control" formControlName="firstname" id="firstname">
       </div>
       <div class="col-md-4 mb-3">
         <label for="validationServer02">Last name</label>
-        <input type="text" class="form-control" id="validationServer02" required>
+        <input type="text" class="form-control" formControlName="lastname" id="lastname">
       </div>
       <div class="form-group col-md-4">
           <label for="inputState">Gender</label>
-          <select id="inputState" class="form-control">
+          <select id="inputState" formControlName="gender" class="form-control">
             <option selected>Choose...</option>
             <option>Male</option>
             <option>Female</option>
@@ -55,20 +55,18 @@
       <div class="col-md-4 mb-3">
         <label for="validationServerUsername">Mobile Number</label>
         <div class="input-group">
-          <input type="text" class="form-control" id="validationServerUsername" aria-describedby="inputGroupPrepend3"
-            required>
+          <input type="text" class="form-control" formControlName="mobilenum" id="mobilenum" aria-describedby="inputGroupPrepend3">
         </div>
       </div>
       <div class="col-md-4 mb-3">
         <label for="validationServerUsername">Home Number</label>
         <div class="input-group">
-          <input type="text" class="form-control" id="validationServerUsername" aria-describedby="inputGroupPrepend3"
-            required>
+          <input type="text" class="form-control" formControlName="homenum" id="homenum" aria-describedby="inputGroupPrepend3">
         </div>
       </div>
     </div>
   </div>
-  <button class="btn" routerLink="/payment" routerLinkActive="active">
+  <button class="btn" (click)="createGuestRecord(personalInfoForm)" routerLinkActive="active">
     <h1><strong>To Checkout Summary</strong></h1>
   </button>
 </form>

@@ -4,13 +4,13 @@ img {
 }
 
 .carousel1{
-    width: 750px;
-    position: absolute;
+    width: 100%;
+    z-index: -1;
+    /* position: absolute;
     left: 380px;
     top: 440px;
-    margin-bottom: 50px;
+    margin-bottom: 50px; */
 }
-
 .checkin{
     position: absolute;
     width:200px;

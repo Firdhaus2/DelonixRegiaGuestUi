@@ -29,7 +29,7 @@ img {
 .checkoutForm{
     width:200px;
     position: absolute;
-    left: 200px;
+    left: 210px;
 }
 
 .checkInOut{
@@ -39,11 +39,12 @@ img {
     border-style: hidden;
     height: 80px;
     width: 1000px;
-    background-color: lightgrey;
+    background-color: #9a2e2e;
+    box-shadow: 2px 2px 10px grey;
 }
 
-.findbtn {
-    background-color: #A12E2E;
+.updatebtn {
+    background-color: #343a40;
     height: 40px;
     width: 90px;
     position: absolute;
@@ -95,5 +96,9 @@ h3{
 
 .bookbtn {
     background-color: #A12E2E;
+    color: white;
+}
+
+label {
     color: white;
 }
