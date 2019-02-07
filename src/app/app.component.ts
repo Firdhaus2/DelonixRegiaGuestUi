@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'swenProj';
+  myName = sessionStorage.getItem("LoggedIn");
 }

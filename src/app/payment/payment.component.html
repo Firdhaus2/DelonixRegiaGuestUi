@@ -25,5 +25,19 @@
     working
     <button class="btn ccbtn" (click)="createGuestPayment(paymentForm)" routerLinkActive="active">Confirm Payment by Credit Card</button>
     <br>
-    <button class="btn cashbtn">Confirm Payment by Cash</button>
+    <button class="btn cashbtn"  data-toggle="modal" data-target="#cash">Confirm Payment by Cash</button>
+  </div>
+
+  <div class="modal fade" id="cash" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body" align=center>
+          <p>Room booking confirmed! Booking ID: 123456</p>
+          <p>Hope you enjoyed the experience.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" routerLink="/home" routerLinkActive="active" data-dismiss="modal" aria-label="Close">Okay</button>
+        </div>
+      </div>
+    </div>
   </div>

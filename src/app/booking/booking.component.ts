@@ -36,6 +36,7 @@ export class BookingComponent implements OnInit {
       this.guestRecord = guestRecord;
     });
     this.router.navigateByUrl('/payment')
+    alert("Successful! Proceed to payment")
 
   }
 
