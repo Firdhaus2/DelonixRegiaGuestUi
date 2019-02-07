@@ -1,21 +1,21 @@
 <form [formGroup]="personalInfoForm">
-  <div class="guestaddress">
+  <div class="guestAddress">
     <h2 align= "center"><b>Guest Address</b></h2>
     <div class="form-group col-md-11">
       <label for="inputEmail4">Street Address</label>
-      <input type="text" formControlName="streetadd" class="form-control" id="streetadd">
+      <input type="text" formControlName="streetAdd" class="form-control" id="streetAdd">
     </div>
     <div class="form-group col-md-2">
       <label for="inputAddress">Block No.</label>
-      <input type="text" formControlName="blockno" class="form-control" id="blockno">
+      <input type="text" formControlName="blockNo" class="form-control" id="blockNo">
     </div>
     <div class="form-group col-md-3">
       <label for="inputAddress2">Unit No.</label>
-      <input type="text" formControlName="unitno" class="form-control" id="unitno">
+      <input type="text" formControlName="unitNo" class="form-control" id="unitNo">
     </div>
     <div class="form-group col-md-3">
       <label for="inputCity">Postal Code</label>
-      <input type="text" formControlName="postalcode" class="form-control" id="postalcode">
+      <input type="text" formControlName="postalCode" class="form-control" id="postalCode">
     </div>
     <div class="form-group col-md-4">
       <label for="inputCountry">Country</label>
@@ -30,21 +30,20 @@
 </form>
 <!--This is the guest information form-->
 <form [formGroup]="personalInfoForm">
-  <div class="guestinfo">
+  <div class="guestInfo">
     <h2 align=center><b>Guest Info</b></h2>
     <div class="form-row">
       <div class="col-md-4 mb-3">
         <label for="validationServer01">First name</label>
-        <input type="text" class="form-control" formControlName="firstname" id="firstname">
+        <input type="text" class="form-control" formControlName="firstName" id="firstName">
       </div>
       <div class="col-md-4 mb-3">
         <label for="validationServer02">Last name</label>
-        <input type="text" class="form-control" formControlName="lastname" id="lastname">
+        <input type="text" class="form-control" formControlName="lastName" id="lastName">
       </div>
       <div class="form-group col-md-4">
           <label for="inputState">Gender</label>
           <select id="inputState" formControlName="gender" class="form-control">
-            <option selected>Choose...</option>
             <option>Male</option>
             <option>Female</option>
             <option>Prefer not to say</option>
@@ -55,13 +54,13 @@
       <div class="col-md-4 mb-3">
         <label for="validationServerUsername">Mobile Number</label>
         <div class="input-group">
-          <input type="text" class="form-control" formControlName="mobilenum" id="mobilenum" aria-describedby="inputGroupPrepend3">
+          <input type="text" class="form-control" formControlName="mobileNum" id="mobileNum" aria-describedby="inputGroupPrepend3">
         </div>
       </div>
       <div class="col-md-4 mb-3">
         <label for="validationServerUsername">Home Number</label>
         <div class="input-group">
-          <input type="text" class="form-control" formControlName="homenum" id="homenum" aria-describedby="inputGroupPrepend3">
+          <input type="text" class="form-control" formControlName="homeNum" id="homeNum" aria-describedby="inputGroupPrepend3">
         </div>
       </div>
     </div>

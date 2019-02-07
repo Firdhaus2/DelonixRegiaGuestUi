@@ -18,20 +18,20 @@ export class BookingComponent implements OnInit {
   ngOnInit() {
 
     this.personalInfoForm = this.fb.group({
-      streetadd: '',
-      blockno: '',
-      unitno: '',
-      postalcode: '',
+      streetAdd: '',
+      blockNo: '',
+      unitNo: '',
+      postalCode: '',
       country: '',
-      firstname: '',
-      lastname: '',
+      firstName: '',
+      lastName: '',
       gender: '',
-      mobilenum: '',
-      homenum: ''
+      mobileNum: '',
+      homeNum: ''
     });
   }
   createGuestRecord() {
-    this.guestRecordService.createGuestRecord(this.personalInfoForm.value.streetadd, this.personalInfoForm.value.blockno, this.personalInfoForm.value.unitno, this.personalInfoForm.value.postalcode, this.personalInfoForm.value.country, this.personalInfoForm.value.firstname, this.personalInfoForm.value.lastname, this.personalInfoForm.value.gender, this.personalInfoForm.value.mobilenum, this.personalInfoForm.value.homenum).subscribe(guestRecord => {
+    this.guestRecordService.createGuestRecord(this.personalInfoForm.value.streetAdd, this.personalInfoForm.value.blockNo, this.personalInfoForm.value.unitNo, this.personalInfoForm.value.postalCode, this.personalInfoForm.value.country, this.personalInfoForm.value.firstName, this.personalInfoForm.value.lastName, this.personalInfoForm.value.gender, this.personalInfoForm.value.mobileNum, this.personalInfoForm.value.homeNum).subscribe(guestRecord => {
       this.guestRecord = guestRecord;
     });
     this.router.navigateByUrl('/payment')

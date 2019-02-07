@@ -14,17 +14,24 @@ h5{
 .food1 {
     position: relative;
     top: 20px;
-    left: 250px;
+    left: 310px;
 }
 
 .food2 {
     position: absolute;
     top: 356px;
-    left: 550px;
+    left: 610px; 
 }
+
+.food3 {
+    position: absolute;
+    top: 356px;
+    left: 910px;
+}
+
 .quantity {
     position: relative;
-    left: 30px;
+    left: 60px;
 }
 
 .addbtn1{
@@ -33,6 +40,25 @@ h5{
     left: 8px;
     width: 80px;
     height: 35px;
+    color: white;
+    background-color: #9a2e2e;
+}
+
+.box {
+    position: absolute;
+    left: 300px;
+    top: 747px;
+    width: 50%;
+    height: 20%;
+    margin: 40px auto;
+}
+.orderbtn{
+    position: absolute;
+    top: 814px;
+    left: 965px;
+    width: 200px;
+    height: 70px;
+    font-size: 150%;
     color: white;
     background-color: #9a2e2e;
 }

@@ -2,7 +2,7 @@ input {
     width: 100%;
   }
 
-.guestaddress{
+.guestAddress{
     border: hidden;
     border-radius: 10px;
     width: 610px;
@@ -15,7 +15,7 @@ input {
     margin-bottom: 20px;    
 }
 
-.guestinfo{
+.guestInfo{
     border: hidden;
     border-radius: 10px;
     width: 610px;

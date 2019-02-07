@@ -41,8 +41,8 @@ export class GuestRecordService {
     return this.getSecureToken() !== null;
   }
 
-  createGuestRecord(streetadd: string, blockno: string, unitno: string, postalcode: string, country: string, firstname: string, lastname: string, gender: string, mobilenum: string, homenum: string) {
-    return this.http.post<any[]>('/api/createGuestRecord/' + streetadd + '/' + blockno + '/' + unitno + '/' + postalcode + '/' + country + '/' + firstname + '/' + lastname + '/' + gender + '/' + mobilenum + '/' + homenum,
-     { 'streetadd': streetadd, 'blockno': blockno, 'unitno': unitno, 'postalcode': postalcode, 'country': country, 'firstname': firstname, 'lastname': lastname, 'gender': gender, 'mobilenum': mobilenum, 'homenum': homenum })
+  createGuestRecord(streetAdd: string, blockNo: string, unitNo: string, postalCode: string, country: string, firstName: string, lastName: string, gender: string, mobileNum: string, homeNum: string) {
+    return this.http.post<any[]>('/api/createGuestRecord/' + streetAdd + '/' + blockNo + '/' + unitNo + '/' + postalCode + '/' + country + '/' + firstName + '/' + lastName + '/' + gender + '/' + mobileNum + '/' + homeNum,
+     { 'streetAdd': streetAdd, 'blockNo': blockNo, 'unitNo': unitNo, 'postalCode': postalCode, 'country': country, 'firstName': firstName, 'lastName': lastName, 'gender': gender, 'mobileNum': mobileNum, 'homeNum': homeNum })
   }
 }

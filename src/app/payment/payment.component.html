@@ -1,3 +1,29 @@
-<p>
-  payment works!
-</p>
+<form [formGroup]="paymentForm">
+    <div class="paymentInfo">
+      <h2 align= "center"><b>Payment Information</b></h2>
+      <div class="form-group col-md-8">
+        <label for="ccholder">Credit Card Holder</label>
+        <input type="text" formControlName="ccHolder" class="form-control" id="ccholder">
+      </div>
+      <div class="form-group col-md-8">
+        <label for="ccnumber">Credit Card Number</label>
+        <input type="text" formControlName="ccNumber" class="form-control" id="ccNumber">
+      </div>
+      <div class="form-group col-md-4">
+        <label for="inputAddress2">Expiry Date</label>
+        <input type="text" formControlName="expDate" class="form-control" id="expDate">
+      </div>
+      <div class="form-group col-md-4">
+        <label for="cvcNum">CVC/CVV Number</label>
+        <input type="text" formControlName="cvcNumber" class="form-control" id="cvcNumber">
+      </div>
+    </div>
+  </form>
+
+  <div class="orderSummary">
+    <h2 align= "center"><b>Order Summary</b></h2>
+    working
+    <button class="btn ccbtn">Confirm Payment by Credit Card</button>
+    <br>
+    <button class="btn cashbtn">Confirm Payment by Cash</button>
+  </div>
