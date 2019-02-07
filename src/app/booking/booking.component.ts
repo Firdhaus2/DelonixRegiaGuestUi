@@ -30,6 +30,7 @@ export class BookingComponent implements OnInit {
       homeNum: ''
     });
   }
+  
   createGuestRecord() {
     this.guestRecordService.createGuestRecord(this.personalInfoForm.value.streetAdd, this.personalInfoForm.value.blockNo, this.personalInfoForm.value.unitNo, this.personalInfoForm.value.postalCode, this.personalInfoForm.value.country, this.personalInfoForm.value.firstName, this.personalInfoForm.value.lastName, this.personalInfoForm.value.gender, this.personalInfoForm.value.mobileNum, this.personalInfoForm.value.homeNum).subscribe(guestRecord => {
       this.guestRecord = guestRecord;

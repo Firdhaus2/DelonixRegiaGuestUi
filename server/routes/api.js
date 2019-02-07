@@ -45,4 +45,16 @@ router.get('/retrieveAccInfo/:username', function (req, res) {
     db.collection('guest_account').find({ "username": req.params.username }).toArray((err, results) => { res.send(results) });
 });
 
+//POST guest record
+router.post('/createGuestRecord/:streetAdd/:blockNo/:unitNo/:postalCode/:country/:firstName/:lastName/:gender/:mobileNum/:homeNum', (req, res) => {
+    db.collection('guest_record').insertOne( req.body , (err, result) => {
+    });
+});
+
+//POST guest payment info
+router.post('/createGuestPayment/:username/:ccHolder/:ccNumber/:expDate/:cvcNumber', (req, res) => {
+    db.collection('guest_payment').insertOne( req.body , (err, result) => {
+    });
+});
+
 module.exports = router;

@@ -11,7 +11,7 @@
       </div>
       <div class="form-group col-md-4">
         <label for="inputAddress2">Expiry Date</label>
-        <input type="text" formControlName="expDate" class="form-control" id="expDate">
+        <input type="date" formControlName="expDate" class="form-control" id="expDate">
       </div>
       <div class="form-group col-md-4">
         <label for="cvcNum">CVC/CVV Number</label>
@@ -23,7 +23,7 @@
   <div class="orderSummary">
     <h2 align= "center"><b>Order Summary</b></h2>
     working
-    <button class="btn ccbtn">Confirm Payment by Credit Card</button>
+    <button class="btn ccbtn" (click)="createGuestPayment(paymentForm)" routerLinkActive="active">Confirm Payment by Credit Card</button>
     <br>
     <button class="btn cashbtn">Confirm Payment by Cash</button>
   </div>

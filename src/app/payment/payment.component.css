@@ -28,13 +28,14 @@
     background-color: rgb(160,46,46);
     color: white;
     position: relative;
-    top: 320px;
+    top: 330px;
 }
 
 .cashbtn {
     background-color: rgb(160,46,46);
+    width: 66%;
     color: white;
     position: relative;
-    top: 350px;
-    left: 83px;
+    top: 335px;
+    left: 62px;
 }
