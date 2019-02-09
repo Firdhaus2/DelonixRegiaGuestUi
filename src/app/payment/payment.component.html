@@ -23,9 +23,9 @@
   <div class="orderSummary">
     <h2 align= "center"><b>Order Summary</b></h2>
     working
-    <button class="btn ccbtn" (click)="createGuestPayment(paymentForm)" routerLinkActive="active">Confirm Payment by Credit Card</button>
+    <button class="btn ccbtn" (click)="createGuestPayment(paymentForm)" data-toggle="modal" data-target="#cc">Confirm Payment by Credit Card</button>
     <br>
-    <button class="btn cashbtn"  data-toggle="modal" data-target="#cash">Confirm Payment by Cash</button>
+    <button class="btn cashbtn" data-toggle="modal" data-target="#cash">Confirm Payment by Cash</button>
   </div>
 
   <div class="modal fade" id="cash" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -33,7 +33,23 @@
       <div class="modal-content">
         <div class="modal-body" align=center>
           <p>Room booking confirmed! Booking ID: 123456</p>
+          <p>Please make payment at counter</p>
           <p>Hope you enjoyed the experience.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" routerLink="/home" routerLinkActive="active" data-dismiss="modal" aria-label="Close">Okay</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="cc" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body" align=center>
+          <p>Room booking confirmed! Booking ID: 123456</p>
+          <p>Hope you enjoyed the experience.</p>
+          <p>Check your email for more info</p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-danger" routerLink="/home" routerLinkActive="active" data-dismiss="modal" aria-label="Close">Okay</button>

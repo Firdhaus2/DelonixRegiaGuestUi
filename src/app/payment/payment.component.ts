@@ -31,7 +31,6 @@ export class PaymentComponent implements OnInit {
     this.guestPaymentService.createGuestPayment(username, this.paymentForm.value.ccHolder, this.paymentForm.value.ccNumber, this.paymentForm.value.expDate, this.paymentForm.value.cvcNumber).subscribe(guestPayment => {
       this.guestPayment = guestPayment;
     });
-    this.router.navigateByUrl('')
 
   }
 
